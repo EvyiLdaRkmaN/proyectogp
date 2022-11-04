@@ -64,3 +64,26 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+---
+
+# instalación de paquetes
+Para poder ejecutar el proyecto sin problema, se requiere de los siguientes puntos
+
+1. Crear la base de datos **proyectogp** y ejecutar el siguiente comando en la ubicación del proyecto, esto puede hacerse siguiendo la siguiente [documentación][1]
+
+    ```dotnetcli
+    php artisan migrate:refresh
+    ```
+2. Instalar los paquetes requeridos para el proyecto utilizando [composer][2]
+    ```dotnetcli
+    composer install
+    ``` 
+3. correr el proyecto
+    ```dotnetcli
+    php artisan serve
+    ```
+
+
+[1]: https://laravel.com/docs/9.x/migrations#roll-back-migrate-using-a-single-command
+[2]: https://getcomposer.org/doc/03-cli.md#install-i
